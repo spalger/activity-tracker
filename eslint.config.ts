@@ -1,20 +1,14 @@
 import js from '@eslint/js';
+import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 import reactHooks from 'eslint-plugin-react-hooks';
-import prettier from 'eslint-config-prettier';
+import prettierRecommended from 'eslint-plugin-prettier/recommended';
 
-export default tseslint.config(
+export default defineConfig(
   js.configs.recommended,
-  ...tseslint.configs.recommended,
-  {
-    plugins: {
-      'react-hooks': reactHooks,
-    },
-    rules: {
-      ...reactHooks.configs.recommended.rules,
-    },
-  },
-  prettier,
+  tseslint.configs.recommended,
+  reactHooks.configs.flat.recommended,
+  prettierRecommended,
   {
     ignores: [
       'pnpm-lock.yaml',

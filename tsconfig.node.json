@@ -1,5 +1,11 @@
 {
-  "include": ["better-auth.config.ts", "drizzle.config.ts", "vite.config.ts"],
+  "include": [
+    "better-auth.config.ts",
+    "drizzle.config.ts",
+    "vite.config.ts",
+    "eslint.config.ts",
+    "prettier.config.ts",
+  ],
   "compilerOptions": {
     "outDir": "dist/types/node",
     "tsBuildInfoFile": "dist/types/node.tsbuildinfo",
