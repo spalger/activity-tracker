@@ -1,6 +1,7 @@
 {
   "name": "activity-log",
   "type": "module",
+  "packageManager": "pnpm@10.18.1",
   "scripts": {
     "dev": "CLOUDFLARE_ENV=local vite dev",
     "deploy-prod": "pnpm run generate && CLOUDFLARE_ENV=prod vite build && wrangler deploy",
