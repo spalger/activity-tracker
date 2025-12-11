@@ -1,0 +1,8 @@
+{
+  "include": [],
+  "references": [
+    { "path": "./tsconfig.node.json" },
+    { "path": "./tsconfig.worker.json" },
+    { "path": "./tsconfig.web.json" }
+  ]
+}

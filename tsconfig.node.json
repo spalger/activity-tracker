@@ -1,0 +1,16 @@
+{
+  "include": ["better-auth.config.ts", "drizzle.config.ts", "vite.config.ts"],
+  "compilerOptions": {
+    "outDir": "dist/types/node",
+    "tsBuildInfoFile": "dist/types/node.tsbuildinfo",
+    "composite": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "typeRoots": [],
+    "lib": ["ESNext"]
+  },
+  "references": [{ "path": "./tsconfig.worker.json" }]
+}

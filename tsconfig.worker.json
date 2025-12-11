@@ -1,0 +1,15 @@
+{
+  "include": ["worker"],
+  "compilerOptions": {
+    "outDir": "dist/types/worker",
+    "tsBuildInfoFile": "dist/types/worker.tsbuildinfo",
+    "composite": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": ["ESNext"],
+    "types": ["./worker/cloudflare.d.ts"]
+  }
+}

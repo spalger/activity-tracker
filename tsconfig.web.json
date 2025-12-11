@@ -1,0 +1,16 @@
+{
+  "include": ["web"],
+  "compilerOptions": {
+    "outDir": "dist/types/web",
+    "tsBuildInfoFile": "dist/types/web.tsbuildinfo",
+    "composite": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": ["ESNext", "DOM"],
+    "types": ["vite/client"],
+    "jsx": "react-jsx"
+  }
+}
